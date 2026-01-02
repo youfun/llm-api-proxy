@@ -21,6 +21,7 @@
 - [x] Ollama
 - [x] Grok
 - [x] OpenRouter
+- [x] ZenMux
 - [ ] Cloudflare Workers AI
 - [ ] Coze
 - [ ] 豆包
@@ -74,6 +75,9 @@
   - `OPENROUTER_MODELS`: OpenRouter Models, 例如 `openai/gpt-4o-mini,anthropic/claude-3-5-sonnet-20240620`
 - Grok: 支持 grok3 系列模型, e.g. `grok-3-latest`, `grok-3-mini-latest`
   - `GROK_API_KEY`: Grok API key
+- ZenMux: 支持 ZenMux 多供应商 LLM 聚合服务，例如 `openai/gpt-4o`, `anthropic/claude-3.5-sonnet`
+  - `ZENMUX_API_KEY`: ZenMux API Key
+  - `ZENMUX_MODELS`: (可选) 自定义支持的 ZenMux 模型列表，例如 `openai/gpt-4o,anthropic/claude-3.5-sonnet`
 
 ## 使用
 

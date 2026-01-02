@@ -23,6 +23,7 @@ Supported models
 - [x] Ollama
 - [x] Grok
 - [x] OpenRouter
+- [x] ZenMux
 - [ ] Cloudflare Workers AI
 - [ ] Coze
 
@@ -71,6 +72,9 @@ Environment variables
   - `OPENROUTER_MODELS`: OpenRouter Models, e.g. `openai/gpt-4o-mini,anthropic/claude-3-5-sonnet-20240620`
 - Grok: Supports grok3 models, e.g. `grok-3-latest`, `grok-3-mini-latest`
   - `GROK_API_KEY`: Grok API key
+- ZenMux: Supports ZenMux multi-provider LLM aggregation, e.g. `openai/gpt-4o`, `anthropic/claude-3.5-sonnet`
+  - `ZENMUX_API_KEY`: ZenMux API Key
+  - `ZENMUX_MODELS`: (Optional) Custom supported ZenMux models, e.g. `openai/gpt-4o,anthropic/claude-3.5-sonnet`
 
 ## Usage
 

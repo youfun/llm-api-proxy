@@ -12,6 +12,7 @@ import { ollama } from '../llm/ollama'
 import { grok } from '../llm/grok'
 import { openrouter } from '../llm/openrouter'
 import { cerebras } from '../llm/cerebras'
+import { zenmux } from '../llm/zenmux'
 
 // --- getModels: Lists all REAL, configured backend providers ---
 export function getModels(env: Record<string, string>) {
@@ -31,5 +32,6 @@ export function getModels(env: Record<string, string>) {
     grok(env),
     openrouter(env),
     cerebras(env),
+    zenmux(env),
   ].filter((it) => it.requiredEnv.every((it) => it in env))
 }
